@@ -1,3 +1,303 @@
 body {
-    background-color:blue;
+    background-color:#EEEEEE;
+    display:flex;
+    flex-direction:column;
+    font-family:"Segoe UI",Arial
+}
+#nav-bar {
+    position:fixed;
+    background-color:#EEEEEE;
+    top:0px;
+    z-index:2;
+    width:100%;
+    left:0;
+}
+.navigationContent img {
+    float:left;
+    max-width:400px;
+    margin-top:5px;
+}
+
+.getStarted {
+    display:flex;
+    flex-direction:column;
+    margin-top:80px;
+    align-self:center;
+    justify-self: center;
+}
+
+.getStarted form {
+    display:flex;
+    flex-direction: column;
+    align-self:center;
+    justify-self: center;
+    align-items:center;
+}
+
+#email {
+    padding:5px;
+    border:1px solid gray;
+}
+
+#submit {
+    position:relative;
+    background-color:#F1C40F;
+    color:black;
+    text-transform:uppercase;
+    padding:10px;
+    font-weight:bold;
+    border:none;
+}
+
+.navigationLinks {
+    float:right;
+}
+
+#nav-bar li {
+    margin-right:80px;
+}
+
+ul, li {
+    list-style: none;
+    display:inline-block;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.fa {
+    color:#FF8C00;
+    margin-right:80px;
+}
+
+.missionStatementContainer {
+ max-width:800px;
+    position:relative;
+    top:120px;
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+}
+
+.missionStatementIconContainer {
+    display:flex;
+    flex-direction:row;
+}
+
+ i {
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    justify-self:center;
+    position:relative;
+    bottom:20px;
+}
+.missionStatementContentContainer {
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    justify-self:center;
+}
+h3 {
+    margin:0px;
+}
+
+
+.fa {
+    line-height:120px;
+}
+
+.youTubeVideo {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self:center;
+    position:relative;
+    top:120px;
+}
+
+.cardsContainer {
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: "firstCard secondCard thirdCard";
+    position:relative;
+    top:140px;
+    width:900px;
+    align-self:center;
+}
+
+#firstCard {
+    grid-area:firstCard;
+}
+
+#secondCard {
+    grid-area:secondCard;
+}
+
+#thirdCard {
+    grid-area:thirdCard;
+}
+
+.cardContainer {
+    text-align:center;
+    border:1px solid black;
+    margin-right:30px;
+    padding-bottom:30px;
+    margin-bottom:100px;
+}
+
+.card h3 {
+    background-color:#DDDDDD;
+    width:100%;
+    padding:10px 0 10px 0;
+    text-transform:uppercase;
+}
+
+.cardContent {
+    line-height:28px;
+}
+
+.price {
+    font-weight:bold;
+    font-size:28px;
+}
+
+.cardSelect {
+    background-color:#f1c40f;
+    padding:7px 15px 7px 15px;
+    transition:.3s;
+}
+
+.cardSelect:hover {
+    background-color: #967c09;
+    transition:.3s;
+}
+
+footer {
+    width:100%;
+    display:flex;
+    position:relative;
+    top:70px;
+
+}
+
+.footerContent {
+    width:700px;
+    background-color:#DDDDDD;
+    margin:0 auto;
+}
+
+.footerLinks {
+    float:right;
+}
+
+.footerLinks li {
+    margin-right:20px;
+}
+
+
+@media(max-width:920px) {
+    .navigationContent {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .navigationContent img {
+        position:relative;
+        right:30px;
+    }
+
+    .cardsContainer {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .cardContainer {
+        width:300px;
+    }
+}
+
+
+@media (max-width: 675px) {
+    h1 {
+        font-size:20px;
+        margin-top:80px;
+    }
+
+    .getStarted form {
+        /*margin-left:100px;*/
+    }
+
+    .fa {
+        display:none;
+        visibility:hidden;
+    }
+
+    .missionStatementContentContainer  {
+        text-align:center;
+    }
+
+    .navigationContent {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .navigationLinks {
+        text-align:center;
+    }
+
+    #nav-bar li {
+        display:flex;
+        flex-direction: column;
+    }
+    iframe {
+        width:450px;
+    }
+}
+
+@media (max-width:515px) {
+    h1 {
+        margin-top:70px;
+    }
+
+    .fa {
+        display:none;
+        visibility:hidden;
+    }
+
+    .navigationContent {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .navigationLinks {
+        text-align:center;
+    }
+
+    iframe {
+        width:400px;
+    }
+
+    .navigationContent img {
+        margin-left:30px;
+    }
+}
+
+@media (max-width:410px) {
+    h1 {
+        font-size:16px;
+    }
+    .getStarted {
+        margin-left:0px;
+    }
+
+    .navigationContent img {
+        max-width:350px;
+        margin-left:30px;
+    }
 }
